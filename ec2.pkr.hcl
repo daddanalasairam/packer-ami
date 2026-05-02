@@ -25,7 +25,7 @@ source "amazon-ebs" "ec2" {
   ssh_password = "DevOps321"
   }
 build {
-  sources = ["source.amazon-ebs.ubuntu"]
+  sources = ["source.amazon-ebs.ec2"]
 
   provisioner "shell" {
     inline = [
